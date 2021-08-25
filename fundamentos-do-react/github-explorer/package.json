@@ -12,13 +12,17 @@
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sass-loader": "^12.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.5",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "node-sass": "^6.0.1",
+    "styles-loader": "^3.0.0",
     "webpack": "^5.39.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^4.0.0"

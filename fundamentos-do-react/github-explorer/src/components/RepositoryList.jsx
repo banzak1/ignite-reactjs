@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 // https://api.github.com/users/banzak1/repos
 
 
+
+
+
 export function RepositoryList() {
 
     const [repositories, setRepositories] = useState([]);
@@ -19,10 +22,9 @@ export function RepositoryList() {
         <section className="repositories-list">
             <h1>Lista de Repositório</h1>
             <ul>
-                <RepositoryItem repository="unform2"/>
-                <RepositoryItem />
-                <RepositoryItem />
-                <RepositoryItem />
+                {repositories.map(repository => {
+                    return <RepositoryItem key={repository.name} repository={repository}/>
+                })}
             </ul>
         </section>
 
